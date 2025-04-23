@@ -1,0 +1,133 @@
+/*---- Responsive CSS Start ----*/
+@media (max-width: 1440px) {
+    .date_man .name_own:nth-child(2){display: block;}
+    .mcs_menu>ul>li{
+        margin: 0 20px;
+    }
+    .mcs_header_wrap.fixed .mcs_menu>ul>li{
+        margin: 0 16px;
+    }
+}
+@media (max-width: 1366px) {}
+@media (max-width: 1024px) {
+    .date_man .name_own:nth-child(2){display: block;}
+    .spePadding {
+        padding-top: 100px;
+    }
+
+    .mcs_header_wrap.fixed .mcs_logo img {
+        height: auto;
+    }
+    .mcs_menu>ul>li {
+        margin: 0 10px;
+    }
+    .mcs_header_wrap.fixed .mcs_menu>ul>li {
+        margin: 0 10px;
+    }
+    .mcs_menu>ul>li>a{
+        font-size: 15px;
+    }
+    .mcs_menu .mcs_btn {
+        margin-left: 20px;
+    }
+    .mcs_content_text .mcs_btn {
+        margin-top: 10px;
+    }
+    .mcs_btn{
+        padding: 0px 15px;
+        min-width: 120px;
+        height: 45px;
+    }
+ 
+}
+@media (min-width: 992px) {
+}
+@media (max-width: 991px) {
+    
+    .ui_cards{
+    grid-template-columns: repeat(3, 2fr);
+}
+
+    .spePadding {
+        padding-top: 100px !important;
+    }
+    .mcs_menu{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+    .mcs_menu .mcs_btn {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .mcs_menu_icon {
+        display: flex;
+        z-index: 0;
+    }
+    .mcs_menu>ul{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding-top: 60px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .mcs_menu>ul.clicked{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .mcs_menu>ul>li>a, .mcs_menu>ul>li>a:hover {
+        margin: 6px 0;
+        width: 100%;
+        padding: 5px;
+        border-bottom: 0px;
+        color: #01081d;
+    }
+    .mcs_menu>ul>li>a::after{
+        display: none;
+    }
+    .mcs_menu>ul>li:first-child {
+        margin-left: 15px;
+    }
+    .mcs_menu>ul>li ul {
+        position: initial;
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        border-top: 0px;
+    }
+    .mcs_menu>ul.clicked>li ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .mcs_menu>ul>li ul li a {
+        text-transform: capitalize;
+        margin: 3px 0;
+        padding: 3px 10px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .mcs_menu>ul>li ul li a:hover, .mcs_menu>ul>li ul li.active a{
+        color: #FC815B;
+        background-color: transparent;
+    }
+  
+
+
+ 
+}
+@media (max-width: 768px) {}
+@media (max-width: 767px) {}
+@media (max-width: 576px) {
+    .ui_cards{
+    grid-template-columns: repeat(2, 2fr);
+}
+}
